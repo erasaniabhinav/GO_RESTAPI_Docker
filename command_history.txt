@@ -1,0 +1,65 @@
+    1  docker --version
+    2  docker ps
+    3  docker ps -a
+    4  scp -i /Users/abhinavreddy/Desktop/Abhi_Go.pem -r /Users/abhinavreddy/Desktop/go-rest-api ec2-user@3.12.108.236:/home/ec2-user/
+    5  Y
+    6  LS
+    7  ls
+    8  docker --version
+    9  docker ps
+   10  docker ps -a
+   11  scp -i /Users/abhinavreddy/Desktop/Abhi_Go.pem -r /Users/abhinavreddy/Desktop/go-rest-api ec2-user@3.12.108.236:/home/ec2-user/
+   12  cd /home/ec2-user/go-rest-api
+   13  ls
+   14  nano Dockerfile
+   15  docker build -t go-rest-api .
+   16  docker run -d -p 8080:8080 go-rest-api
+   17  docker images
+   18  docker build -t go-rest-api .
+   19  go mod init <module-name>
+   20  go mod init go-rest-api
+   21  pwd
+   22  go mod tidy
+   23  sudo yum update -y
+   24  sudo yum install golang -y
+   25  go version
+   26  mkdir -p ~/go/src
+   27  export GOPATH=~/go
+   28  export PATH=$PATH:$GOPATH/bin
+   29  ls
+   30  docker images
+   31  cd /home/ec2-user/go-rest-api
+   32  go mod init go-rest-api  # Initialize the Go module
+   33  go mod tidy               # Create go.sum and tidy dependencies
+   34  docker build -t go-rest-api .
+   35  cd /home/ec2-user/go-rest-api
+   36  go mod init go-rest-api  # Initialize the Go module if needed
+   37  go mod tidy
+   38  ls -l go.mod go.sum
+   39  docker build -t go-rest-api .
+   40  ls -l go.mod go.sum
+   41  go version
+   42  go mod tidy
+   43  ls -l go.mod go.sum
+   44  cat go.mod
+   45  go get github.com/gorilla/mux
+   46  go mod tidy
+   47  ls -l go.mod go.sum
+   48  docker build -t go-rest-api .
+   49  nano go.mod
+   50  go mod tidy
+   51  docker build -t go-rest-api .
+   52  docker run -d -p 8080:8080 go-rest-api
+   53  docker ps
+   54  docker ps -a
+   55  curl http://3.12.108.236:8080/users
+   56  docker ps
+   57  curl http://3.12.108.236:8080/tasks
+   58  cd /home/ec2-user/go-rest-api
+   59  ls
+   60  git init
+   61  git remote add origin https://github.com/erasaniabhinav/GO_RESTAPI_Docker
+   62  git add .
+   63  git commit -m "Initial commit with Go REST API and Docker setup"
+   64  git push -u origin master
+   65  history > command_history.txt
